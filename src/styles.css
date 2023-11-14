@@ -4,18 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@screen md {
-  .red-btn {
-    @apply border-2;
-  }
-}
-
-@screen sm {
-  .card-img {
-    @apply h-48;
-  }
-}
-
 .page-title {
   @apply text-gray-700 text-6xl font-semibold;
 }
@@ -39,19 +27,13 @@
 }
 
 .red-btn {
-  @apply btn text-primary border-primary   transition ease-out duration-500;
-}
-.red-btn:hover {
-  @apply bg-primary text-white;
+  @apply btn text-primary border-primary transition ease-out duration-500 hover:bg-primary hover:text-white md:border-2;
 }
 
 .gray-btn {
-  @apply btn bg-secondary-100 text-secondary-200 inline-block  transform   transition ease-out duration-300;
-}
-.gray-btn:hover {
-  @apply shadow-inner scale-125 bg-opacity-50;
+  @apply btn bg-secondary-100 text-secondary-200 inline-block  transform   transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50;
 }
 
 .card-img {
-  @apply h-32 w-full object-cover;
+  @apply h-32 w-full object-cover sm:h-48;
 }
