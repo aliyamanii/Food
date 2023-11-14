@@ -6,100 +6,108 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="text-gray-600 font-body">
-    <div class="grid md:grid-cols-3">
+    <div class="h-full">
+      <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto z-50">
+            <div>
+              <h1 class="title-followup">
+                <a href="/" class="navbar-title">Food Ninja</a>
+              </h1>
+            </div>
+            <div
+                class="nav-links w-full md:w-auto min-h-[60vh] md:min-h-fit md:static absolute bg-white left-0 top-[-100%] flex items-center px-5 duration-300">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8" id="menu">
+                  <li class="text-gray-700 font-bold py-1">
+                    <a
+                      href="#"
+                      class="navbar-option"
+                    >
+                      <span>Home</span>
+                      <svg
+                        class="w-5 ml-2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="py-1">
+                    <a href="#" class="navbar-option">
+                      <span>About</span>
+                      <svg
+                        class="w-5 ml-2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="py-1">
+                    <a href="#" class="navbar-option">
+                      <span>Contact</span>
+                      <svg
+                        class="w-5 ml-2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+              <div class="flex gap-2 justify-center md:justify-end">
+                <a href="#" class="red-btn">Log in</a>
+                <a href="#" class="red-btn">Sign up</a>
+              </div> 
+              <div onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden">
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </div>
+            </div>
+    </header>
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
           <div class="flex justify-between items-center">
-            <h1 class="title-followup">
-              <a href="/" class="navbar-title">Food Ninja</a>
-            </h1>
-            <div class="px-4 cursor-pointer md:hidden" id="burger">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </div>
+            
+            
           </div>
-          <ul class="text-sm mt-6 hidden md:block" id="menu">
-            <li class="text-gray-700 font-bold py-1">
-              <a
-                href="#"
-                class="px-4 flex justify-end border-r-4 border-primary"
-              >
-                <span>Home</span>
-                <svg
-                  class="w-5 ml-2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="py-1">
-              <a
-                href="#"
-                class="navbar-option"
-              >
-                <span>About</span>
-                <svg
-                  class="w-5 ml-2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="py-1">
-              <a
-                href="#"
-                class="navbar-option"
-              >
-                <span>Contact</span>
-                <svg
-                  class="w-5 ml-2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          
         </nav>
       </div>
 
       <main class="px-16 py-6 md:col-span-2 bg-gray-100">
-        <div class="flex gap-2 justify-center md:justify-end">
-          <a href="#" class="red-btn">Log in</a>
-          <a href="#" class="red-btn">Sign up</a>
-        </div>
+        
 
         <header>
           <h2 class="page-title">Recipes</h2>
@@ -107,18 +115,12 @@
         </header>
 
         <div>
-          <h4 class="section-title">
-            Latest Recipes
-          </h4>
+          <h4 class="section-title">Latest Recipes</h4>
 
           <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- cards go here -->
             <div class="card">
-              <img
-                src="img/stew.jpg"
-                alt="stew"
-                class="card-img"
-              />
+              <img src="img/stew.jpg" alt="stew" class="card-img" />
               <div class="m-4">
                 <span class="font-bold">5 Bean Chili Stew</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
@@ -139,11 +141,7 @@
               </div>
             </div>
             <div class="card">
-              <img
-                src="img/noodles.jpg"
-                alt="noodles"
-                class="card-img"
-              />
+              <img src="img/noodles.jpg" alt="noodles" class="card-img" />
               <div class="m-4">
                 <span class="font-bold">Veg Noodles</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
@@ -164,11 +162,7 @@
               </div>
             </div>
             <div class="card">
-              <img
-                src="img/curry.jpg"
-                alt="curry"
-                class="card-img"
-              />
+              <img src="img/curry.jpg" alt="curry" class="card-img" />
               <div class="m-4">
                 <span class="font-bold">Tofu Curry</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
@@ -190,9 +184,7 @@
             </div>
           </div>
 
-          <h4 class="section-title">
-            Most Popular
-          </h4>
+          <h4 class="section-title">Most Popular</h4>
 
           <div class="mt-8">
             <!-- cards go here -->
@@ -200,11 +192,7 @@
         </div>
 
         <div class="mt-12 flex justify-center">
-          <div
-            class="""
-          >
-            Load more
-          </div>
+          <div class="gray-btn">Load more</div>
         </div>
       </main>
     </div>
