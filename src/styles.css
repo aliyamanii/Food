@@ -4,18 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar-title {
+  @apply hover:text-gray-700;
+}
 .page-title {
   @apply text-gray-700 text-6xl font-semibold;
+}
+
+.title-followup {
+  @apply font-bold uppercase p-4 border-b border-gray-100;
 }
 
 .navbar-option {
   @apply px-4 flex justify-end border-r-4 border-white;
 }
-.card {
-  @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative;
+
+.section-title {
+  @apply font-bold pb-2 mt-12 border-b border-gray-200;
 }
-.card:hover {
-  @apply shadow-lg;
+
+.card {
+  @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg;
 }
 
 .badge {
