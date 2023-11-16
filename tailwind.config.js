@@ -4,14 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FF6363",
-        secondary: {
-          100: "#E2E2D5",
-          200: "#888883",
-        },
+        coal: "#1E1E24",
+        cream: "#FFF8F0",
+        caramel: "#FFCF99",
+        maroon: "#92140C",
+        navy: "#111D4A",
       },
       fontFamily: {
         body: ["Nunito"],
+        logo: ["Lobster"],
       },
     },
   },

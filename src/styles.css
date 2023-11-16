@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.navbar-title {
-  @apply hover:text-gray-700;
-}
 .page-title {
   @apply text-gray-700 text-6xl font-semibold;
 }
@@ -14,9 +11,19 @@
 .title-followup {
   @apply font-bold uppercase p-4 border-b border-gray-100;
 }
+.navbar-container {
+  @apply flex justify-center h-[5.5vh] md:h-[50px] bg-coal text-cream;
+}
+
+.navbar-title {
+  @apply text-2xl italic font-logo font-extrabold hover:scale-110 transition-all;
+}
 
 .navbar-option {
-  @apply px-4 flex justify-end border-r-4 border-white;
+  @apply h-full w-full md:w-fit px-5 py-5 flex items-center justify-end font-bold hover:bg-maroon transition-all duration-200;
+}
+.navbar-anchor {
+  @apply flex justify-end;
 }
 
 .section-title {
@@ -24,11 +31,7 @@
 }
 
 .card {
-  @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg;
-}
-
-.badge {
-  @apply absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full;
+  @apply rounded-2xl bg-white border-gray-200 shadow-2xl overflow-hidden  hover:cursor-pointer hover:scale-105 transition-all;
 }
 
 .btn {
@@ -36,11 +39,11 @@
 }
 
 .red-btn {
-  @apply btn text-primary border-primary transition ease-out duration-500 hover:bg-primary hover:text-white border-2;
+  @apply btn text-maroon border-2 border-maroon  hover:bg-maroon hover:text-cream transition ease-out duration-300;
 }
 
 .gray-btn {
-  @apply btn bg-secondary-100 text-secondary-200 inline-block  transform   transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50;
+  @apply btn bg-caramel text-cream inline-block transform  transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50 hover:text-navy;
 }
 
 .card-img {
