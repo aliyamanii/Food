@@ -548,12 +548,12 @@ video {
   left: 0px;
 }
 
-.top-\[-100\%\]{
-  top: -100%;
+.top-\[-9000\%\]{
+  top: -9000%;
 }
 
-.top-\[5\.5\%\]{
-  top: 5.5%;
+.top-\[90\%\]{
+  top: 90%;
 }
 
 .m-4{
@@ -574,6 +574,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .h-6{
@@ -722,6 +726,8 @@ video {
 }
 
 .navbar-container{
+  position: relative;
+  z-index: 50;
   display: flex;
   height: 5.5vh;
   justify-content: center;
@@ -801,6 +807,7 @@ video {
 }
 
 .card{
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -824,6 +831,19 @@ video {
   cursor: pointer;
 }
 
+.card:hover::before{
+  position: absolute;
+  inset: 0px;
+  background-color: rgb(255 248 240 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.group:hover .card:hover::before{
+  --tw-bg-opacity: 0.75;
+}
+
 .card-img{
   height: 8rem;
   width: 100%;
@@ -835,6 +855,23 @@ video {
   .card-img{
     height: 12rem;
   }
+}
+
+.card-paragraph{
+  position: absolute;
+  inset: 0px;
+  height: 75%;
+  padding: 1rem;
+  text-align: right;
+  line-height: 1.75rem;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.card-paragraph:hover{
+  opacity: 1;
 }
 
 .btn{
