@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
 
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -562,16 +564,8 @@ video {
   margin-left: 0.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-8{
   margin-top: 2rem;
-}
-
-.block{
-  display: block;
 }
 
 .flex{
@@ -622,6 +616,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -663,9 +661,9 @@ video {
   background-color: rgb(30 30 36 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100{
+.bg-cream{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(255 248 240 / var(--tw-bg-opacity));
 }
 
 .px-16{
@@ -683,13 +681,8 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.font-body{
-  font-family: Nunito;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-vazirmatn{
+  font-family: Vazirmatn;
 }
 
 .text-3xl{
@@ -697,22 +690,13 @@ video {
   line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
-.text-gray-500{
+.text-navy{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(17 29 74 / var(--tw-text-opacity));
 }
 
 .duration-300{
@@ -723,8 +707,6 @@ video {
   font-size: 3.75rem;
   line-height: 1;
   font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .title-followup{
@@ -732,8 +714,11 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
   padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
-  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(146 20 12 / var(--tw-text-opacity));
 }
 
 .navbar-container{
@@ -742,6 +727,7 @@ video {
   justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 36 / var(--tw-bg-opacity));
+  font-family: Vazirmatn;
   --tw-text-opacity: 1;
   color: rgb(255 248 240 / var(--tw-text-opacity));
 }
@@ -753,7 +739,7 @@ video {
 }
 
 .navbar-title{
-  font-family: Lobster;
+  font-family: Noto Nastaliq Urdu;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 800;
@@ -786,6 +772,7 @@ video {
 }
 
 .navbar-option:hover{
+  cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(146 20 12 / var(--tw-bg-opacity));
 }
@@ -804,6 +791,8 @@ video {
 
 .section-title{
   margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -812,6 +801,8 @@ video {
 }
 
 .card{
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 1rem;
   --tw-border-opacity: 1;
@@ -831,6 +822,19 @@ video {
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   cursor: pointer;
+}
+
+.card-img{
+  height: 8rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 640px){
+  .card-img{
+    height: 12rem;
+  }
 }
 
 .btn{
@@ -915,19 +919,6 @@ video {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.card-img{
-  height: 8rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 640px){
-  .card-img{
-    height: 12rem;
-  }
 }
 
 @media (min-width: 768px){

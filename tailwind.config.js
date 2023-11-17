@@ -13,6 +13,8 @@ module.exports = {
       fontFamily: {
         body: ["Nunito"],
         logo: ["Lobster"],
+        vazirmatn: ["Vazirmatn"],
+        nastaliq: ["Noto Nastaliq Urdu"],
       },
     },
   },

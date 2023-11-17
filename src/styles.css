@@ -1,37 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .page-title {
-  @apply text-gray-700 text-6xl font-semibold;
+  @apply text-6xl font-semibold;
 }
 
 .title-followup {
-  @apply font-bold uppercase p-4 border-b border-gray-100;
+  @apply font-bold text-xl text-maroon p-4 border-b border-gray-100;
 }
+
 .navbar-container {
-  @apply flex justify-center h-[5.5vh] md:h-[50px] bg-coal text-cream;
+  @apply flex justify-center h-[5.5vh] md:h-[50px] bg-coal text-cream font-vazirmatn;
 }
 
 .navbar-title {
-  @apply text-2xl italic font-logo font-extrabold hover:scale-110 transition-all;
+  @apply text-2xl italic font-nastaliq font-extrabold hover:scale-110 transition-all;
 }
 
 .navbar-option {
-  @apply h-full w-full md:w-fit px-5 py-5 flex items-center justify-end font-bold hover:bg-maroon transition-all duration-200;
+  @apply h-full w-full md:w-fit px-5 py-5 flex items-center justify-end font-bold hover:cursor-pointer hover:bg-maroon transition-all duration-200;
 }
 .navbar-anchor {
   @apply flex justify-end;
 }
 
 .section-title {
-  @apply font-bold pb-2 mt-12 border-b border-gray-200;
+  @apply font-bold flex justify-end pb-2 mt-12 border-b border-gray-200;
 }
 
 .card {
-  @apply rounded-2xl bg-white border-gray-200 shadow-2xl overflow-hidden  hover:cursor-pointer hover:scale-105 transition-all;
+  @apply rounded-2xl flex flex-col bg-white border-gray-200 shadow-2xl overflow-hidden  hover:cursor-pointer hover:scale-105 transition-all;
+}
+
+.card-img {
+  @apply h-32 w-full object-cover sm:h-48;
 }
 
 .btn {
@@ -44,8 +50,4 @@
 
 .gray-btn {
   @apply btn bg-caramel text-cream inline-block transform  transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50 hover:text-navy;
-}
-
-.card-img {
-  @apply h-32 w-full object-cover sm:h-48;
 }
