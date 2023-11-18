@@ -860,7 +860,11 @@ video {
 .card-paragraph{
   position: absolute;
   inset: 0px;
-  height: 75%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 40%;
+  overflow: hidden;
   padding: 1rem;
   text-align: right;
   line-height: 1.75rem;
@@ -871,6 +875,10 @@ video {
 }
 
 .card-paragraph:hover{
+  opacity: 1;
+}
+
+.card:hover .card-paragraph {
   opacity: 1;
 }
 

@@ -46,7 +46,11 @@
 }
 
 .card-paragraph {
-  @apply h-[75%] leading-7 absolute inset-0 p-4 opacity-0 hover:opacity-100 transition-all text-right;
+  @apply h-[40%] leading-7 absolute inset-0 p-4 opacity-0 hover:opacity-100 transition-all text-right line-clamp-3 overflow-hidden;
+}
+
+.card:hover .card-paragraph {
+  opacity: 1;
 }
 
 .btn {
