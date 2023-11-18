@@ -45,6 +45,10 @@
   @apply h-32 w-full object-cover sm:h-48;
 }
 
+.card-title {
+  @apply font-bold;
+}
+
 .card-paragraph {
   @apply h-[40%] leading-7 absolute inset-0 p-4 opacity-0 hover:opacity-100 transition-all text-right line-clamp-3 overflow-hidden;
 }
@@ -63,4 +67,38 @@
 
 .gray-btn {
   @apply btn bg-caramel text-cream inline-block transform  transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50 hover:text-navy;
+}
+
+/* Modal Styles */
+.modal {
+  @apply hidden fixed inset-0 z-50 bg-black bg-opacity-50;
+}
+
+.modal-content {
+  @apply w-fit md:w-2/5 h-fit mx-auto my-10 box-border bg-cream rounded-3xl max-w-2xl;
+}
+
+.modal-img {
+  @apply w-full h-auto object-cover mb-4;
+}
+
+.modal-text {
+  @apply w-full h-full p-6 text-right;
+}
+
+.modal-title {
+  @apply text-3xl mb-3;
+}
+
+.close-container {
+  @apply text-right;
+}
+
+.close {
+  @apply text-navy cursor-pointer text-3xl p-4 text-right transition-all;
+}
+
+.close:hover,
+.close:focus {
+  @apply text-maroon transition-all;
 }
