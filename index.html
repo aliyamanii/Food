@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,76 +6,119 @@
     <title>Self</title>
     <link rel="stylesheet" href="public/styles.css" />
   </head>
-  <body class="font-vazirmatn text-navy">
+  <body class="font-vazirmatn bg-black text-navy">
+    <!-- <div class="fixed inset-0 -z-30 bg-cover bg-fixed opacity-80" style="background-image: url('public/img/bg.jpg');"></div> -->
     <div class="h-screen overflow-y-hidden">
       <header class="navbar-container">
-        <nav class="w-[92%] h-full flex justify-between items-center ">
-            <div>
-              <h1 class="navbar-title">
-                <a href="/" class="navbar-title">سلف</a>
-              </h1>
-            </div>
-            <div
-                class="nav-links w-full md:w-auto md:h-full py-5 md:py-0 md:static absolute bg-coal left-0 top-[-9000%] duration-300 ">
-                <ul class="flex w-full md:w-auto md:h-full md:flex-row flex-col md:items-center md:gap-0 justify-end items-start" id="menu">
-                  <li class="navbar-option">
-                    <a href="#" class="navbar-anchor">
-                      <span>گزارشات</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                      </svg>                      
-                      
-                    </a>
-                  </li>
-                  <li class="navbar-option">
-                    <a href="#" class="navbar-anchor">
-                      <span>امور مالی</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
-                      </svg>                      
-                      
-                    </a>
-                  </li>
-                  <li class="navbar-option">
-                    <a href="#" class="navbar-anchor">
-                      <span>رزرو غذا</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                      </svg>
-                      
-                    </a>
-                  </li>
-                  <li class="navbar-option">
-                    <a
-                      href="#"
-                      class="navbar-anchor"
-                    >
-                      <span>پیشخوان</span>
-                      <svg
-                        class="w-5 ml-2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-              <div class="flex gap-2 justify-center md:justify-end">
-                <a href="#" class="red-btn">ورود</a>
-                <a href="#" class="red-btn">ثبت نام</a>
-              </div> 
-              <div onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden">
+        <nav class="w-[92%] h-full flex justify-between items-center">
+          <div>
+            <a href="/" class="navbar-title">
+              <svg
+                id="Food_Service_24"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  width="24"
+                  height="24"
+                  stroke="none"
+                  fill="#000000"
+                  opacity="0"
+                />
+
+                <g transform="matrix(0.77 0 0 0.77 12 12)">
+                  <path
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-dashoffset: 0;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 4;
+                      fill: rgb(255, 255, 255);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" translate(-13, -13)"
+                    d="M 5 1 C 2.789063 1 1 2.789063 1 5 C 1 7.210938 2.789063 9 5 9 C 7.210938 9 9 7.210938 9 5 C 9 2.789063 7.210938 1 5 1 Z M 17 1 L 17 5 L 21 5 L 21 1 Z M 22 3 L 22 5 L 24 5 L 24 3 Z M 15 6 C 15 7.101563 15.898438 8 17 8 L 23 8 C 24.101563 8 25 7.101563 25 6 Z M 14 9 C 14 10.101563 14.898438 11 16 11 L 24 11 C 25.101563 11 26 10.101563 26 9 Z M 1.375 10 C 0.960938 10.011719 0.449219 10.042969 0 10.09375 L 0 25 L 11 25 L 11 16.09375 L 13.1875 18.8125 C 13.488281 19.113281 13.914063 19.3125 14.3125 19.3125 C 14.710938 19.3125 15.105469 19.113281 15.40625 18.8125 L 18.90625 14.09375 C 19.507813 13.492188 23 13 23 12 L 17 12 L 14.40625 15.5 L 11 10.5 C 10.5 10 8.113281 10 7.8125 10 L 5 21 L 2.1875 10 C 2.085938 10 1.789063 9.988281 1.375 10 Z"
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="nav-links w-full md:w-auto md:h-full py-5 md:py-0 md:static absolute bg-coal left-0 top-[-9000%] duration-300"
+          >
+            <ul
+              class="flex w-full md:w-auto md:h-full md:flex-row flex-col md:items-center md:gap-0 justify-end items-start"
+            >
+              <li class="navbar-option">
+                <a href="#" class="navbar-anchor">
+                  <span>گزارشات</span>
                   <svg
-                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 ml-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-option">
+                <a href="#" class="navbar-anchor">
+                  <span>امور مالی</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 ml-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-option">
+                <a href="#" class="navbar-anchor">
+                  <span>رزرو غذا</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 ml-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-option">
+                <a href="#" class="navbar-anchor">
+                  <span>پیشخوان</span>
+                  <svg
+                    class="w-5 ml-2"
                     fill="none"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -82,98 +126,182 @@
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></path>
                   </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6">
+            <div class="flex gap-2 justify-center md:justify-end">
+              <a href="#" class="red-btn">ورود</a>
+              <a href="#" class="red-btn">ثبت نام</a>
+            </div>
+            <div
+              onclick="onToggleMenu(this)"
+              id="menu"
+              class="text-3xl cursor-pointer md:hidden"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <main
+          class="h-full px-16 py-16 md:col-span-2 bg-cream overflow-y-scroll"
+        >
+          <div class="flex flex-col items-end">
+            <h2 class="page-title">برنامه غذا</h2>
+            <h3 class="title-followup">هفته جاری</h3>
+          </div>
+
+          <div>
+            <h4 class="section-title">پرطرفدارترین ها</h4>
+
+            <div class="mt-8 grid lg:grid-cols-3 gap-10">
+              <!-- cards go here -->
+              <div class="card">
+                <img src="public/img/mahi.jpg" alt="mahi" class="card-img" />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">سبزی پلو با ماهی</span>
                 </div>
-            </div>
-    </header>
-
-      <main class="h-full px-16 py-16 md:col-span-2 bg-cream overflow-y-scroll">
-
-        <div class="flex flex-col items-end">
-          <h2 class="page-title">برنامه غذا</h2>
-          <h3 class="title-followup">هفته جاری</h3>
-        </div>
-
-        <div>
-          <h4 class="section-title">پرطرفدارترین ها</h4>
-
-          <div class="mt-8 grid lg:grid-cols-3 gap-10">
-            <!-- cards go here -->
-            <div class="card">
-              <img src="public/img/mahi.jpg" alt="mahi" class="card-img" />
-              <div class="m-4 flex justify-end ">
-                <span class="card-title">سبزی پلو با ماهی</span>
+                <p class="card-paragraph">
+                  سبزی پلو با ماهی یکی از انواع غذاهای خوشمزه و پرطرفدار ایرانی
+                  است که معمولا برای شب عید نوروز تهیه می شود،برای تهیه سبزی پلو
+                  با ماهی شب عید ابتدا پیاز را به صورت خلالی خرد می کنیم و داخل
+                  یک کاسه مناسب می ریزیم. در ادامه سیر را رنده می کنیم و به
+                  همراه ادویه ماهی، نمک، فلفل سیاه و زردچوبه به کاسه اضافه می
+                  کنیم
+                </p>
               </div>
-              <p class="card-paragraph">سبزی پلو با ماهی یکی از انواع غذاهای خوشمزه و پرطرفدار ایرانی است که معمولا برای شب عید نوروز تهیه می شود،برای تهیه سبزی پلو با ماهی شب عید ابتدا پیاز را به صورت خلالی خرد می کنیم و داخل یک کاسه مناسب می ریزیم. در ادامه سیر را رنده می کنیم و به همراه ادویه ماهی، نمک، فلفل سیاه و زردچوبه به کاسه اضافه می کنیم</p>
-            </div>
-            
-            <div class="card">
-              <img src="public/img/kotlet.jpg" alt="kotlet" class="card-img" />
-              <div class="m-4 flex justify-end">
-                <span class="card-title">کتلت</span>
+
+              <div class="card">
+                <img
+                  src="public/img/kotlet.jpg"
+                  alt="kotlet"
+                  class="card-img"
+                />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">کتلت</span>
+                </div>
+                <p class="card-paragraph">
+                  کتلت با گوشت چرخ‌کرده یکی از خاطره‌انگیزترین و خوشمزه‌ترین
+                  غذاهایی است که از کودکی تا به امروز نوش‌جان کرده‌اید.کتلت در
+                  تنوع بسیار زیادی طبخ و سرو می‌شود، انواع کتلت با سبزیجات،
+                  گوشت، مرغ، ماهی از شناخته شده‌ترین کتلت‌های است که قطعا نام
+                  آن‌ها را شنیده‌اید. مواد تشکیل دهنده و اصلی کتلت ها تخم‌مرغ،
+                  سیب‌زمینی و پیاز است که با سایر مواد دیگر به شکل های گوناگونی
+                  میکس و ترکیب می‌شوند. این غذای لذیذ و خوش‌عطر طعم را با نان و
+                  همراه برنج می‌توانید سرو و نوش‌جان کنید.
+                </p>
               </div>
-              <p class="card-paragraph">کتلت با گوشت چرخ‌کرده یکی از خاطره‌انگیزترین و خوشمزه‌ترین غذاهایی است که از کودکی تا به امروز نوش‌جان کرده‌اید.کتلت در تنوع بسیار زیادی طبخ و سرو می‌شود، انواع کتلت با سبزیجات، گوشت، مرغ، ماهی از شناخته شده‌ترین کتلت‌های است که قطعا نام آن‌ها را شنیده‌اید. مواد تشکیل دهنده و اصلی کتلت ها تخم‌مرغ، سیب‌زمینی و پیاز است که با سایر مواد دیگر به شکل های گوناگونی میکس و ترکیب می‌شوند. این غذای لذیذ و خوش‌عطر طعم را با نان و همراه برنج می‌توانید سرو و نوش‌جان کنید.</p>
-            </div>
-            
-            <div class="card">
-              <img src="public/img/ghaz.jpg" alt="ghaz" class="card-img" />
-              <div class="m-4 flex justify-end">
-                <span class="card-title">کباب غاز</span>
+
+              <div class="card">
+                <img src="public/img/ghaz.jpg" alt="ghaz" class="card-img" />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">کباب غاز</span>
+                </div>
+                <p class="card-paragraph">
+                  غاز دارای گوشت سیاه و سفت است که قطعات پوست آن را می‌کنیم
+                  قطعات سینه و ران را جدا می‌کنیم و استخوان‌های سینه را می‌گیریم
+                  و سسی از روغن زیتون یا کره آب کرده و آبلیمو و نمک و فلفل آماده
+                  می‌کنیم و قطعات گوشت را در سس می‌خوابانیم و بعد مثل کباب جوجه
+                  به سیخ می‌کشیم و روی حرارت ملایم کباب می‌کنیم، باید زمان طبخ
+                  آن از جوجه طولانی تر و حرارت ملایم‌تر باشد و مرتب به آن سس کره
+                  و ابلیمو داد تا کاملا کباب پخته و برشته شود، انواع پرندگان
+                  حلال گوشت را بهمین طریق می‌توان کباب کرد. نژادهای جوان احتیاج
+                  به پختن ندارد و مثل کباب جوجه می‌توانیم آنها را خورد کرده و در
+                  سس بخوابانیم و کباب کنیم.
+                </p>
               </div>
-              <p class="card-paragraph">غاز دارای گوشت سیاه و سفت است که قطعات پوست آن را می‌کنیم قطعات سینه و ران را جدا می‌کنیم و استخوان‌های سینه را می‌گیریم و سسی از روغن زیتون یا کره آب کرده و آبلیمو و نمک و فلفل آماده می‌کنیم و قطعات گوشت را در سس می‌خوابانیم و بعد مثل کباب جوجه به سیخ می‌کشیم و روی حرارت ملایم کباب می‌کنیم،
-                باید زمان طبخ آن از جوجه طولانی تر و حرارت ملایم‌تر باشد و مرتب به آن سس کره و ابلیمو داد تا کاملا کباب پخته و برشته شود، انواع پرندگان حلال گوشت را بهمین طریق می‌توان کباب کرد. نژادهای جوان احتیاج به پختن ندارد و مثل کباب جوجه می‌توانیم آنها را خورد کرده و در سس بخوابانیم و کباب کنیم.</p>
             </div>
 
+            <h4 class="section-title">یارانه ای</h4>
+
+            <div class="mt-8 grid lg:grid-cols-3 gap-10">
+              <!-- cards go here -->
+              <div class="card">
+                <img src="public/img/frni.jpg" alt="mahi" class="card-img" />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">فرنی</span>
+                </div>
+                <p class="card-paragraph">
+                  فرنی یکی از غذاهای سبک و بسیار خوشمزه ایرانی است که بیشتر در
+                  مناسبت های خاص مثل ماه مبارک رمضان طبخ می شود. البته فرنی به
+                  طور معمول برای کسانی که معده ضعیف دارند، مانند نوزادان پخته می
+                  شود، ولی در ماه مبارک رمضان به صورت مجلسی تر برای سفره های
+                  افطاری و سحری طبخ می شود. در تهیه فرنی به سلیقه خود می توانیم
+                  از انواع مغزیجات نیز استفاده کنیم که باعث می شود در پایان فرنی
+                  مجلسی تر و مقوی تری داشته باشیم، برای مشاهده آموزش طرز تهیه
+                  فرنی در ادامه با چی شی همراه باشید.
+                </p>
+              </div>
+
+              <div class="card">
+                <img src="public/img/cs.jpg" alt="kotlet" class="card-img" />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">چیکن استراگانف</span>
+                </div>
+                <p class="card-paragraph">
+                  چیکن استراگانف یکی از انواع غذاهای معروف کشور روسیه می باشد که
+                  شباهت زیادی به بیف استروگانف دارد، با این تفاوت که به جای گوشت
+                  قرمز در تهیه این غذا از گوشت مرغ استفاده می شود ابتدا خامه
+                  ،شیر و کره را زودتر از داخل یخچال بیرون می آوریم تا با دمای
+                  محیط سازگار شوند. سینه مرغ را می شوییم و به هر صورت که دوست
+                  داریم روی تخته آشپزخانه ریز خرد می کنیم. پیاز را پوست می گیریم
+                  و می شوییم و روی تخته آشپزخانه نگینی خرد می کنیم.
+                </p>
+              </div>
+
+              <div class="card">
+                <img src="public/img/nugs.jpg" alt="ghaz" class="card-img" />
+                <div class="m-4 flex justify-end">
+                  <span class="card-title">ناگت مرغ</span>
+                </div>
+                <p class="card-paragraph">
+                  ناگت مرغ مانند کالباس و همبرگر از غذاهای سریع و نیمه آماده ای
+                  می باشد که میان کودکان از محبوبیت خاصی برخوردار است. شما می
+                  توانید با تهیه این ناگت ها در منزل هم از سلامت آن اطمینان حاصل
+                  کنید و هم از طعم فوق‌العاده آن نیز بهره ببرید. ابتدا کنار های
+                  نان تست را برش بزنید و کنار بگذارید. سپس نان وسط آن را به صورت
+                  مربع مربع برش بزنید و در ظرف مناسبی بریزید. نصف لیوان شیر را
+                  نیز به این نان ها اضافه کرده و هم بزنید تا مواد به خورد نان
+                  بروند. نان ها را کنار بگذارید تا خمیری شکل شوند.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <h4 class="section-title">یارانه ای</h4>
-
-          <div class="mt-8 grid lg:grid-cols-3 gap-10">
-            <!-- cards go here -->
-            <div class="card">
-              <img src="public/img/frni.jpg" alt="mahi" class="card-img" />
-              <div class="m-4 flex justify-end">
-                <span class="card-title">فرنی</span>
-              </div>
-              <p class="card-paragraph">فرنی یکی از غذاهای سبک و بسیار خوشمزه ایرانی است که بیشتر در مناسبت های خاص مثل ماه مبارک رمضان طبخ می شود. البته فرنی به طور معمول برای کسانی که معده ضعیف دارند، مانند نوزادان پخته می شود، ولی در ماه مبارک رمضان به صورت مجلسی تر برای سفره های افطاری و سحری طبخ می شود. در تهیه فرنی به سلیقه خود می توانیم از انواع مغزیجات نیز استفاده کنیم که باعث می شود در پایان فرنی مجلسی تر و مقوی تری داشته باشیم، برای مشاهده آموزش طرز تهیه فرنی در ادامه با چی شی همراه باشید.</p>
-            </div>
-
-            <div class="card">
-              <img src="public/img/cs.jpg" alt="kotlet" class="card-img" />
-              <div class="m-4 flex justify-end">
-                <span class="card-title">چیکن استراگانف</span>
-              </div>
-              <p class="card-paragraph">چیکن استراگانف یکی از انواع غذاهای معروف کشور روسیه می باشد که شباهت زیادی به بیف استروگانف دارد، با این تفاوت که به جای گوشت قرمز در تهیه این غذا از گوشت مرغ استفاده می شود ابتدا خامه ،شیر و کره را زودتر از داخل یخچال بیرون می آوریم تا با دمای محیط سازگار شوند. سینه مرغ را می شوییم و به هر صورت که دوست داریم روی تخته آشپزخانه ریز خرد می کنیم. پیاز را پوست می گیریم و می شوییم و روی تخته آشپزخانه نگینی خرد می کنیم.</p>
-            </div>
-
-            <div class="card">
-              <img src="public/img/nugs.jpg" alt="ghaz" class="card-img" />
-              <div class="m-4 flex justify-end">
-                <span class="card-title">ناگت مرغ</span>
-              </div>
-              <p class="card-paragraph">ناگت مرغ مانند کالباس و همبرگر از غذاهای سریع و نیمه آماده ای می باشد که میان کودکان از محبوبیت خاصی برخوردار است. شما می توانید با تهیه این ناگت ها در منزل هم از سلامت آن اطمینان حاصل کنید و هم از طعم فوق‌العاده آن نیز بهره ببرید. ابتدا کنار های نان تست را برش بزنید و کنار بگذارید. سپس نان وسط آن را به صورت مربع مربع برش بزنید و در ظرف مناسبی بریزید.  نصف لیوان شیر را نیز به این نان ها اضافه کرده و هم بزنید تا مواد به خورد نان بروند. نان ها را کنار بگذارید تا خمیری شکل شوند.</p>
-            </div>
-
-            </div>
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
 
     <div id="custom-modal" class="modal">
       <div class="modal-content">
         <div class="close-container">
           <span class="close">&times;</span>
-      </div>
-        <img id="modal-image" alt="Modal Image" class="modal-img">
+        </div>
+        <img id="modal-image" alt="Modal Image" class="modal-img" />
         <div class="modal-text">
           <h2 id="modal-title" class="modal-title"></h2>
           <p id="modal-paragraph" class="modal-paragraph"></p>
         </div>
       </div>
     </div>
-    
+
     <script src="index.js"></script>
   </body>
 </html>
