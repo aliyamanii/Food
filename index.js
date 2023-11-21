@@ -39,3 +39,12 @@ window.addEventListener("click", (event) => {
     closeModal();
   }
 });
+
+const parallaxBackground = document.querySelector(".parallax-bg");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  const translateY = scrollPosition * -0.3; // Adjust the multiplier for the desired parallax effect
+
+  parallaxBackground.style.transform = `translateY(${translateY}px)`;
+});

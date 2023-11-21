@@ -5,8 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.parallax-bg {
+  @apply w-screen h-[150vh] -z-10 fixed inset-0 bg-cover bg-fixed opacity-80 transition-all ease-out duration-300;
+}
+
+.parallax-bg::before {
+  @apply content-[''] absolute inset-0 bg-navy bg-opacity-40;
+}
+
 .page-title {
-  @apply text-6xl font-semibold;
+  @apply text-6xl font-semibold text-cream;
 }
 
 .title-followup {
@@ -30,7 +38,7 @@
 }
 
 .section-title {
-  @apply font-bold flex justify-end pb-2 mt-12 border-b border-gray-200;
+  @apply font-bold flex justify-end pb-2 mt-12 border-b border-gray-200 text-cream;
 }
 
 .card {
