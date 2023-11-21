@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       colors: {
         coal: "#1E1E24",
-        cream: "#FFF8F0",
-        caramel: "#FFCF99",
-        maroon: "#92140C",
-        navy: "#111D4A",
+        cream: "#EAE2B7",
+        caramel: "#FCBF49",
+        crimson: "#92140C",
+        navy: "#003049",
+        crimson: "#D62828",
+        tangerine: "#F77F00",
       },
       fontFamily: {
         body: ["Nunito"],

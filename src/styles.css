@@ -14,23 +14,23 @@
 }
 
 .page-title {
-  @apply text-6xl font-semibold text-cream;
+  @apply text-6xl text-cream font-bold;
 }
 
 .title-followup {
-  @apply font-bold text-xl text-maroon p-4 border-b border-gray-100;
+  @apply font-bold text-xl text-crimson p-4 border-b border-gray-100;
 }
 
 .navbar-container {
-  @apply w-screen h-[7vh] md:h-[50px] fixed top-0 z-50 flex justify-center  bg-coal shadow-md text-cream font-vazirmatn;
+  @apply w-screen h-[7vh] md:h-[50px] fixed top-0 z-50 flex justify-center  bg-tangerine shadow-md text-navy font-vazirmatn;
 }
 
 .navbar-title {
-  @apply text-2xl italic font-nastaliq font-extrabold hover:scale-110 transition-all;
+  @apply hover:scale-125 transition-all;
 }
 
 .navbar-option {
-  @apply h-full w-full md:w-fit px-5 py-5 flex items-center justify-end font-bold hover:cursor-pointer hover:bg-maroon transition-all duration-200;
+  @apply h-full w-full md:w-fit px-5 py-5 flex items-center justify-end font-bold hover:cursor-pointer hover:bg-cream transition-all duration-200;
 }
 
 .navbar-anchor {
@@ -61,7 +61,15 @@
   @apply h-[40%] leading-7 absolute inset-0 p-4 opacity-0 hover:opacity-100 transition-all text-right line-clamp-3 overflow-hidden;
 }
 
+.card-btn {
+  @apply red-btn absolute top-28 right-4 opacity-0 transition-all;
+}
+
 .card:hover .card-paragraph {
+  opacity: 1;
+}
+
+.card:hover .card-btn {
   opacity: 1;
 }
 
@@ -70,11 +78,11 @@
 }
 
 .red-btn {
-  @apply btn text-maroon border-2 border-maroon  hover:bg-maroon hover:text-cream transition ease-out duration-300;
+  @apply btn text-crimson border-2 border-crimson  hover:bg-crimson hover:text-cream transition ease-out duration-300;
 }
 
-.gray-btn {
-  @apply btn bg-caramel text-cream inline-block transform  transition ease-out duration-300 hover:shadow-inner hover:scale-125 hover:bg-opacity-50 hover:text-navy;
+.navy-btn {
+  @apply rounded-full py-2 px-3 uppercase text-sm font-bold tracking-wider cursor-pointer text-navy inline-block border-2 border-navy transform  transition ease-out hover:shadow-inner hover:scale-105 hover:bg-cream hover:text-navy;
 }
 
 /* Modal Styles */
@@ -108,5 +116,5 @@
 
 .close:hover,
 .close:focus {
-  @apply text-maroon transition-all;
+  @apply text-crimson transition-all;
 }
