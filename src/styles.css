@@ -14,7 +14,7 @@
 }
 
 .navbar-container {
-  @apply relative z-50 flex justify-center h-[5.5vh] md:h-[50px] bg-coal text-cream font-vazirmatn;
+  @apply w-screen h-[7vh] md:h-[50px] fixed top-0 z-50 flex justify-center  bg-coal shadow-md text-cream font-vazirmatn;
 }
 
 .navbar-title {
